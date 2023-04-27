@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Button Example</title>
+	<style>
+		body {
+			background-color: white;
+		}
+
+		.green-button {
+			background-color: green;
+			color: white;
+			padding: 10px;
+			border: none;
+			cursor: pointer;
+			border-radius: 10px;
+			border: 5px solid rgb(54, 50, 50);
+		}
+
+		.blue-button {
+			background-color: blue;
+			color: white;
+			padding: 10px;
+			border: none;
+			cursor: pointer;
+			border-radius: 10px;
+			border: 5px solid rgb(54, 50, 50);
+
+		}
+	</style>
+</head>
+
+<body>
+	<button class="green-button">Green</button>
+	<button class="blue-button">Blue</button>
+	<script>
+		document.querySelector('.green-button').addEventListener('click', function () {
+			document.body.style.backgroundColor = 'green';
+		});
+
+		document.querySelector('.blue-button').addEventListener('click', function () {
+			document.body.style.backgroundColor = 'blue';
+		});
+	</script>
+</body>
+
+</html>
